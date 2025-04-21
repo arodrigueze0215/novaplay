@@ -1,0 +1,57 @@
+:root {
+  /* Brand / Accent */
+  --color-accent-primary: #FC4747;
+
+  /* Backgrounds */
+  --color-background-dark: #10141E;
+  --color-background-medium: #161D2F;
+
+  /* Text & UI */
+  --color-text-muted: #5A698F;
+  --color-text-light: #FFFFFF;
+
+  --font-family: "Barlow Semi Condensed", sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-light: 300;
+}
+
+/* Base typography */
+.t__base {
+  font-family: var(--font-family);
+  font-style: normal;
+  line-height: auto;
+}
+
+/* Heading Size & weight modifiers */
+.t__heading--l {
+  font-size: 32px;
+  font-weight: var(--font-weight-light);
+  letter-spacing: -0.5px;
+}
+
+.t__heading--m {
+  font-size: 24px;
+  font-weight: var(--font-weight-light);
+}
+
+.t__heading--s {
+  font-size: 24px;
+  font-weight: var(--font-weight-medium);
+}
+
+.t__heading--xs {
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+}
+
+
+/* Heading Size & weight modifiers */
+.t__body--m {
+  font-size: 15px;
+  font-weight: var(--font-weight-light);
+}
+
+.t__body--s {
+  font-size: 13px;
+  font-weight: var(--font-weight-light);
+}
