@@ -1,16 +1,11 @@
 :root {
   /* Brand / Accent */
-  --color-accent-primary: #FC4747;
-
-  /* Backgrounds */
-  --color-background-dark: #10141E;
-  --color-background-medium: #161D2F;
-
-  /* Text & UI */
-  --color-text-muted: #5A698F;
-  --color-text-light: #FFFFFF;
-
-  --font-family: "Barlow Semi Condensed", sans-serif;
+  --color-accent-primary: #fc4747;
+  --color-background-dark: #10141e;
+  --color-background-medium: #161d2f;
+  --color-text-muted: #5a698f;
+  --color-text-light: #ffffff;
+  --font-family: 'Barlow Semi Condensed', sans-serif;
   --font-weight-medium: 500;
   --font-weight-light: 300;
 }
@@ -43,7 +38,6 @@
   font-size: 18px;
   font-weight: var(--font-weight-medium);
 }
-
 
 /* Heading Size & weight modifiers */
 .t__body--m {
