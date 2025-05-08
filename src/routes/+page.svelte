@@ -1,3 +1,7 @@
+<script>
+  import Button from '$lib/atoms/Button/button.svelte';
+</script>
+
 <h1 class="t__base t__heading--l">Design System</h1>
 
 <div class="ds__container">
@@ -8,6 +12,7 @@
 
   <span class="t__base t__body--m"> Body (M) - Outfit Light - 15px</span>
   <span class="t__base t__body--s"> Body (S) - Outfit Light - 13px</span>
+  <Button text="Button" />
 </div>
 
 <style>
