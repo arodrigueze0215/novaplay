@@ -1,13 +1,17 @@
 :root {
   /* Brand / Accent */
-  --color-accent-primary: #fc4747;
-  --color-background-dark: #10141e;
-  --color-background-medium: #161d2f;
-  --color-text-muted: #5a698f;
-  --color-text-light: #ffffff;
+  --color-red: #fc4747;
+  --color-blue-dark: #10141e;
+  --color-semi-dark-blue: #161d2f;
+  --color-greyish-blue: #5a698f;
+  --color-pure-white: #ffffff;
   --font-family: 'Barlow Semi Condensed', sans-serif;
   --font-weight-medium: 500;
   --font-weight-light: 300;
+}
+
+body {
+  background-color: var(--color-blue-dark);
 }
 
 /* Base typography */
@@ -15,6 +19,7 @@
   font-family: var(--font-family);
   font-style: normal;
   line-height: auto;
+  color: var(--color-pure-white);
 }
 
 /* Heading Size & weight modifiers */

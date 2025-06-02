@@ -6,8 +6,8 @@
 
 <style>
   .button {
-    background-color: var(--color-accent-primary);
-    color: var(--color-text-light);
+    background-color: var(--color-red);
+    color: var(--color-pure-white);
     border: none;
     padding: 14px 20px;
     cursor: pointer;
@@ -15,7 +15,7 @@
     min-width: 336px;
   }
   .button:hover {
-    background-color: var(--color-text-light);
-    color: var(--color-background-medium);
+    background-color: var(--color-pure-white);
+    color: var(--color-semi-dark-blue);
   }
 </style>
