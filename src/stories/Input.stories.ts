@@ -1,81 +1,58 @@
 import type { Meta, StoryObj } from "@storybook/svelte";
 
-import Button from "../lib/atoms/Button/button.svelte";
+import Input from "../lib/atoms/Input/input.svelte";
 
-// This component is rendering a button meanwhile it is being merge to main branch.
-// The Imput component will come in other commit.
-
-type StoryArgs = {
+type InputStoryArgs = {
   text: string;
+  placeholder: string;
+  type: "text" | "email" | "password" | "number";
 };
-const meta: Meta<StoryArgs> = {
+
+const meta: Meta<InputStoryArgs> = {
   title: "Atoms/Input",
+  tags: ["autodocs"],
   argTypes: {
-    text: {
+    placeholder: {
       control: "text",
+      description: "Placeholder text for the input",
+    },
+    type: {
+      control: "select",
+      options: ["text", "email", "password", "number"],
+      description: "Input type",
     },
   },
 };
 
-const args: StoryArgs = {
-  text: "Click Me",
-};
-
-export const Default: StoryObj<StoryArgs> = {
-  args,
-  render: (args) => ({
-    Component: Button,
-    props: args,
-  }),
-};
 export default meta;
+type Story = StoryObj<InputStoryArgs>;
 
-// import Input from '../lib/atoms/Input/input.svelte';
+const args: InputStoryArgs = {
+  text: "Some text",
+  placeholder: "Enter text here",
+  type: "text",
+};
+const render = (args: InputStoryArgs) => ({
+  Component: Input,
+  props: args,
+});
 
-// const meta: Meta<Input> = {
-//   title: 'Atoms/Input',
-//   component: Input,
-//   tags: ['autodocs'],
-//   argTypes: {
-//     placeholder: {
-//       control: 'text',
-//       description: 'Placeholder text for the input',
-//     },
-//     type: {
-//       control: 'select',
-//       options: ['text', 'email', 'password', 'number'],
-//       description: 'Input type',
-//     },
-//   },
-// };
+export const Text: Story = {
+  args,
+  render,
+};
 
-// export default meta;
-// type Story = StoryObj<Input>;
+export const Email: Story = {
+  args,
+  render,
+};
 
-// export const Text: Story = {
-//   args: {
-//     placeholder: 'Enter text here',
-//     type: 'text',
-//   },
-// };
+export const Password: Story = {
+  args,
+  render,
+};
 
-// export const Email: Story = {
-//   args: {
-//     placeholder: 'Enter your email',
-//     type: 'email',
-//   },
-// };
-
-// export const Password: Story = {
-//   args: {
-//     placeholder: 'Enter password',
-//     type: 'password',
-//   },
-// };
-
-// export const Number: Story = {
-//   args: {
-//     placeholder: 'Enter number',
-//     type: 'number',
-//   },
-// };
+export const Number: Story = {
+  args,
+  render,
+};

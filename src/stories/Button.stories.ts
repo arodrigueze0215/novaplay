@@ -6,6 +6,7 @@ type StoryArgs = {
 };
 const meta: Meta<StoryArgs> = {
   title: "Atoms/Button",
+  tags: ["autodocs"],
   argTypes: {
     text: {
       control: "text",
