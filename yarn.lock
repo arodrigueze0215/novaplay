@@ -330,6 +330,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.25.6.tgz#4276edd5c105bc28b11c6a1f76fb9d29d1bd25c1"
   integrity sha512-NgJPHHbEpLQgDH2MjQu90pzW/5vvXIZ7KOnPyNBm92A6WgZ/7b6fJyUBjoumLqeOQQGqY2QjQxRo97ah4Sj0cA==
 
+"@fontsource/outfit@^5.2.7":
+  version "5.2.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/outfit/-/outfit-5.2.7.tgz#1b21a44faad310be7b6ad7905d8ee562fca84ccd"
+  integrity sha512-yqye+QiySPQO4/u6b5pbFnY0qUdzMWG10NSfOSAQTh1qJIMLk4IsUXo1YDkddki3+XNCMIwWFmBr6fUE+umGpQ==
+
 "@jridgewell/gen-mapping@^0.3.5":
   version "0.3.8"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.3.8.tgz#4f0e06362e01362f823d348f1872b08f666d8142"
@@ -637,7 +642,7 @@
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-9.0.17.tgz#fe0e6431ff6002269b18e9bb32cbe3fc01b13b10"
   integrity sha512-ak/x/m6MDDxdE6rCDymTltaiQF3oiKrPHSwfM+YPgQR6MVmzTTs4+qaPfeev7FZEHq23IkfDMTmSTTJtX7Vs9A==
 
-"@storybook/svelte-vite@9.0.17", "@storybook/svelte-vite@^9.0.17":
+"@storybook/svelte-vite@9.0.17":
   version "9.0.17"
   resolved "https://registry.yarnpkg.com/@storybook/svelte-vite/-/svelte-vite-9.0.17.tgz#990431b47471aa1b772b1da23e102ffb4c7aec18"
   integrity sha512-fRIxOZy9IRI6BfL1LgFn+B+IckGOlT1SstD01y9ddO4pVKWih/l+vb44bnZs+Z0faJZbrG/LgfnXTOPj052Z8g==
