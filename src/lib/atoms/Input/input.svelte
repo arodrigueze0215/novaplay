@@ -51,6 +51,7 @@
     {required}
     on:blur={handleBlur}
     aria-describedby={!isValid ? 'error-message' : undefined}
+    aria-invalid={!isValid}
   />
   {#if !isValid}
     <span id="error-message" class="error-message t__base t__body--m">{errorMessage}</span>
@@ -76,6 +77,7 @@
   .input {
     width: 100%;
     border: none;
+    outline: none;
     border-bottom: 1px solid var(--color-greyish-blue);
     background-color: transparent;
     color: var(--color-pure-white);
