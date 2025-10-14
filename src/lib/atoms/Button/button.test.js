@@ -1,3 +1,4 @@
+import '@testing-library/jest-dom/vitest';
 import { render, screen } from '@testing-library/svelte';
 import Button from './button.svelte';
 import { describe, it, expect } from 'vitest';

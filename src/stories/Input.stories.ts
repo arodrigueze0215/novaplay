@@ -5,7 +5,9 @@ import Input from "../lib/atoms/Input/input.svelte";
 type InputStoryArgs = {
   text: string;
   placeholder: string;
-  type: "text" | "email" | "password" | "number";
+  type: "text" | "email" | "password";
+  errorMessage: string;
+  required: boolean;
 };
 
 const meta: Meta<InputStoryArgs> = {
@@ -18,8 +20,20 @@ const meta: Meta<InputStoryArgs> = {
     },
     type: {
       control: "select",
-      options: ["text", "email", "password", "number"],
+      options: ["text", "email", "password"],
       description: "Input type",
+    },
+    text: {
+      control: "text",
+      description: "Input text",
+    },
+    errorMessage: {
+      control: "text",
+      description: "Error message",
+    },
+    required: {
+      control: "boolean",
+      description: "Is required",
     },
   },
 };
@@ -27,32 +41,40 @@ const meta: Meta<InputStoryArgs> = {
 export default meta;
 type Story = StoryObj<InputStoryArgs>;
 
-const args: InputStoryArgs = {
-  text: "Some text",
-  placeholder: "Enter text here",
-  type: "text",
-};
 const render = (args: InputStoryArgs) => ({
   Component: Input,
   props: args,
 });
 
 export const Text: Story = {
-  args,
+  args: {
+    placeholder: "Enter text here",
+    type: "text",
+    text: "",
+    errorMessage: "Error message",
+    required: true,
+  },
   render,
 };
 
 export const Email: Story = {
-  args,
+  args: {
+    placeholder: "Email address",
+    type: "email",
+    text: "",
+    errorMessage: "Can't be empty",
+    required: true,
+  },
   render,
 };
 
 export const Password: Story = {
-  args,
-  render,
-};
-
-export const Number: Story = {
-  args,
+  args: {
+    placeholder: "Enter password here",
+    type: "password",
+    text: "",
+    errorMessage: "Error message",
+    required: true,
+  },
   render,
 };

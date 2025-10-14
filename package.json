@@ -15,13 +15,14 @@
     "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@fontsource/outfit": "^5.2.7",
     "@storybook/addon-docs": "^9.0.17",
     "@storybook/addon-svelte-csf": "^5.0.7",
     "@storybook/sveltekit": "^9.0.17",
     "@sveltejs/adapter-auto": "^4.0.0",
     "@sveltejs/kit": "^2.16.0",
     "@sveltejs/vite-plugin-svelte": "^5.0.0",
-    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/svelte": "^5.2.7",
     "jsdom": "^26.1.0",
     "prettier": "^3.5.3",
