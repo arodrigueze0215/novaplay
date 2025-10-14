@@ -1,14 +1,11 @@
 <script lang="ts">
+  import { ErrorMessages } from "../../../constants/errors";
 
-  const ErrorMessage = {
-    REQUIRED: 'Cannot be empty',
-    EMAIL: 'Wrong email format',
-  };
 
-  //These props are used to control the input, pretty similar than useState in React.
+    //These props are used to control the input, pretty similar than useState in React.
   export let type: 'email' | 'password' | 'text';
   export let placeholder = '';
-  export let errorMessage = ErrorMessage.REQUIRED;
+  export let errorMessage = ErrorMessages.REQUIRED;
   export let value = '';
   export let required = false;
   export let isValid = true;
@@ -22,20 +19,20 @@
         const inputValue = (event.target as HTMLInputElement).value;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (inputValue.length === 0) {
-          isValid = false;
-          errorMessage = ErrorMessage.REQUIRED;
+          isValid = !required; // If not required, an empty field is valid
+          errorMessage = required ? ErrorMessages.REQUIRED : '';
         } else if (!emailRegex.test(inputValue)) {
           isValid = false;
-          errorMessage = ErrorMessage.EMAIL;
+          errorMessage = ErrorMessages.EMAIL;
         } else {
           isValid = true;
-          errorMessage = '';
+          errorMessage = ErrorMessages.REQUIRED;
         }
         break;
       }
-      default:
-        isValid = required && value.length > 0;
-        errorMessage = ErrorMessage.REQUIRED;
+      default: // For 'text' and 'password' types
+        isValid = !required || value.length > 0;
+        errorMessage = required && value.length === 0 ? ErrorMessages.REQUIRED : '';
         break;
     }
   }
