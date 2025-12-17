@@ -1,4 +1,8 @@
-<div class="bookmark">
+<script>
+  export let classNames = '';
+</script>
+
+<div class="bookmark {classNames}">
   <button aria-label="Bookmark">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
       <circle opacity="0.500647" cx="16" cy="16" r="16" fill="#10141E" />
