@@ -31,17 +31,19 @@
 
 <style>
   .card {
-    width: 164px;
+    width: 100%;
+    grid-column: span 2;
   }
   .card__image__container {
     position: relative;
-    max-width: 164px;
+    width: 100%;
     aspect-ratio: 82 / 55;
   }
 
   .card__image {
     position: absolute;
     border-radius: 8px;
+    width: 100%;
     aspect-ratio: 82 / 55;
   }
 
@@ -60,9 +62,28 @@
     margin-block: -4px;
   }
 
+  @media (min-width: 768px) {
+    .card {
+      width: 100%;
+      grid-column: span 4;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .card {
+      width: 100%;
+      grid-column: span 3;
+    }
+  }
+
   :global(.bookmark__position) {
     position: absolute;
     top: 8px;
     right: 8px;
+
+    @media (min-width: 768px) {
+      top: 16px;
+      right: 16px;
+    }
   }
 </style>

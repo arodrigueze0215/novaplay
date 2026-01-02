@@ -605,6 +605,11 @@
     svelte-ast-print "^0.4.0"
     zimmerframe "^1.1.2"
 
+"@storybook/addon-viewport@^9.0.8":
+  version "9.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-9.0.8.tgz#def767425a92a4bab91c2a09e884fbfb1810e3c5"
+  integrity sha512-HgIFDzNXvMx0zQBM5mhwBoAJlrF9KRlxNCZnJbqrFLCJO4Ps2PMtB0HRGHcg0gm3RLcqyps0DpiF7wll3udb7Q==
+
 "@storybook/builder-vite@9.0.17":
   version "9.0.17"
   resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-9.0.17.tgz#17321b66a9ba4788b98956598696f43c23d29088"
