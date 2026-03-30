@@ -579,6 +579,15 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.40.1.tgz#8078b71fe0d5825dcbf83d52a7dc858b39da165c"
   integrity sha512-ECyOuDeH3C1I8jH2MK1RtBJW+YPMvSfT0a5NN0nHfQYnDSJ6tUiZH3gzwVP5/Kfh/+Tt7tpWVF9LXNTnhTJ3kA==
 
+"@storybook/addon-backgrounds@9.0.0-alpha.12":
+  version "9.0.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-9.0.0-alpha.12.tgz#ad75263d15dbe19a69be35e38afa331bce1b6fd0"
+  integrity sha512-oiQL8GIs2jNhN1cfbWa6iJIdey/WC+TFlmIeoWzYsJ79EQCxpL5JgmzCMGIkZ+p7L4MUR/5S5b5fh6ApyWcUKw==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+    memoizerific "^1.11.3"
+    ts-dedent "^2.0.0"
+
 "@storybook/addon-docs@^9.0.17":
   version "9.0.17"
   resolved "https://registry.yarnpkg.com/@storybook/addon-docs/-/addon-docs-9.0.17.tgz#4b139b80f824fb2a0f36df2499522d8b074d679d"
@@ -590,6 +599,40 @@
     "@storybook/react-dom-shim" "9.0.17"
     react "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
     react-dom "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+    ts-dedent "^2.0.0"
+
+"@storybook/addon-essentials@^9.0.17":
+  version "9.0.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-essentials/-/addon-essentials-9.0.0-alpha.12.tgz#eccae42dbcca1e1f6e8534548b969da7a4b67d15"
+  integrity sha512-wmUT9Q4rl6SvVgrIYDj97uHHkMSGba1A+/rMHypIw7OtrdUp+w1OKZRDNVrU0AfqfbaptT5dRrBsDr/eFZ9v8Q==
+  dependencies:
+    "@storybook/addon-backgrounds" "9.0.0-alpha.12"
+    "@storybook/addon-highlight" "9.0.0-alpha.12"
+    "@storybook/addon-measure" "9.0.0-alpha.12"
+    "@storybook/addon-outline" "9.0.0-alpha.12"
+    ts-dedent "^2.0.0"
+
+"@storybook/addon-highlight@9.0.0-alpha.12":
+  version "9.0.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-highlight/-/addon-highlight-9.0.0-alpha.12.tgz#e9b857e90f38f66c30ec595db6c68d9e106b7dd7"
+  integrity sha512-b8E1AjBaWFvBoWUfXXlAYfAIanuaHLZwJhmOcqJGtbx9RIC5uHfyGC8KHJgeyKMzvHhZD86vWBo5KUAFLFVUrg==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+
+"@storybook/addon-measure@9.0.0-alpha.12":
+  version "9.0.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-measure/-/addon-measure-9.0.0-alpha.12.tgz#55eafb8a31e2939bf9c2c236e4b7d35a7b89937a"
+  integrity sha512-ZtAKi/mlvVYaBMlPokvrHF94YFsyYAlz3IpKu+uz5QymN3VweSIgGsDJmAqV49lVzyVk40KWCVypi4O3L7nvdQ==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+    tiny-invariant "^1.3.1"
+
+"@storybook/addon-outline@9.0.0-alpha.12":
+  version "9.0.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-outline/-/addon-outline-9.0.0-alpha.12.tgz#6ff279cdad19dac291506ea3e689c29d352d511c"
+  integrity sha512-I7opVIK8bNUYSC+P+b8AwP6sE2pFyXH5F0gz8WA0pdkRcxerQmYnhlsXrI5T0QMu79tZnjVNrQTUrqpy/Z5oqQ==
+  dependencies:
+    "@storybook/global" "^5.0.0"
     ts-dedent "^2.0.0"
 
 "@storybook/addon-svelte-csf@^5.0.7":
@@ -604,11 +647,6 @@
     magic-string "^0.30.12"
     svelte-ast-print "^0.4.0"
     zimmerframe "^1.1.2"
-
-"@storybook/addon-viewport@^9.0.8":
-  version "9.0.8"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-9.0.8.tgz#def767425a92a4bab91c2a09e884fbfb1810e3c5"
-  integrity sha512-HgIFDzNXvMx0zQBM5mhwBoAJlrF9KRlxNCZnJbqrFLCJO4Ps2PMtB0HRGHcg0gm3RLcqyps0DpiF7wll3udb7Q==
 
 "@storybook/builder-vite@9.0.17":
   version "9.0.17"
@@ -1409,6 +1447,18 @@ magic-string@^0.30.0, magic-string@^0.30.11, magic-string@^0.30.12, magic-string
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.5.0"
 
+map-or-similar@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/map-or-similar/-/map-or-similar-1.5.0.tgz#6de2653174adfb5d9edc33c69d3e92a1b76faf08"
+  integrity sha512-0aF7ZmVon1igznGI4VS30yugpduQW3y3GkcgGJOp7d8x8QrizhigUxjI/m2UojsXXto+jLAH3KSz+xOJTiORjg==
+
+memoizerific@^1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/memoizerific/-/memoizerific-1.11.3.tgz#7c87a4646444c32d75438570905f2dbd1b1a805a"
+  integrity sha512-/EuHYwAPdLtXwAwSZkh/Gutery6pD2KYd44oQLhAvQp/50mpyduZh8Q7PYHXTCJ+wuXxt7oij2LXyIJOOYFPog==
+  dependencies:
+    map-or-similar "^1.5.0"
+
 min-indent@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/min-indent/-/min-indent-1.0.1.tgz#a63f681673b30571fbe8bc25686ae746eefa9869"
@@ -1784,7 +1834,7 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-tiny-invariant@^1.3.3:
+tiny-invariant@^1.3.1, tiny-invariant@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.3.3.tgz#46680b7a873a0d5d10005995eb90a70d74d60127"
   integrity sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==

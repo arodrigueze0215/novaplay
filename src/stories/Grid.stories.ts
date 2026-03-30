@@ -4,7 +4,6 @@ import GridWithCards from "./helpers/GridWithCards.svelte";
 const meta = {
   title: "Layout/Grid",
   component: GridWithCards,
-  tags: ["autodocs"],
 } satisfies Meta<GridWithCards>;
 
 export default meta;

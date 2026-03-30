@@ -9,44 +9,62 @@
   export let title = 'Card Title';
 </script>
 
-<article class="card">
+<li class="card">
   <div class="card__image__container">
     <img class="card__image" src={image} alt={title} />
     <Bookmark classNames="bookmark__position" />
+    <div class="card__gradient"></div>
   </div>
   <div class="t__base card__content">
+    <h2 class="t__body--r card__title">{title}</h2>
     <div class="card__metadata">
       <p class="t__body--xs card__year">{year}</p>
-      <Icon name="dot" />
+      <Icon name="dot" aria-hidden="true" />
       <div class="t__body--xs card__category">
-        <Icon name="category" />
+        <Icon name="category" aria-hidden="true" />
         <p>{category}</p>
       </div>
-      <Icon name="dot" />
+      <Icon name="dot" classNames="card__content" aria-hidden="true" />
       <p class="t__body--xs card__rating">{rating}</p>
     </div>
-    <h2 class="t__body--r card__title">{title}</h2>
   </div>
-</article>
+</li>
 
 <style>
   .card {
-    width: 100%;
-    grid-column: span 2;
-  }
-  .card__image__container {
     position: relative;
     width: 100%;
-    aspect-ratio: 82 / 55;
+    min-width: 240px;
+    aspect-ratio: 240 / 140;
+  }
+
+  .card__image__container {
+    position: absolute;
+    inset: 0;
+    width: 100%;
   }
 
   .card__image {
-    position: absolute;
     border-radius: 8px;
     width: 100%;
-    aspect-ratio: 82 / 55;
   }
 
+  .card__gradient {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  .card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .card__metadata {
     display: flex;
     flex-direction: row;
