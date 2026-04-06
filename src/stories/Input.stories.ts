@@ -12,7 +12,6 @@ type InputStoryArgs = {
 
 const meta: Meta<InputStoryArgs> = {
   title: "Atoms/Input",
-  tags: ["autodocs"],
   argTypes: {
     placeholder: {
       control: "text",
